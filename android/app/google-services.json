@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "661106240053",
+    "project_id": "keypuzzle-e7fd3",
+    "storage_bucket": "keypuzzle-e7fd3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:661106240053:android:21d6397822119096c9df7c",
+        "android_client_info": {
+          "package_name": "xyz.keypuzzle.mobileapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "661106240053-dg4hhprkbl9hegs20clpebimeiv61tk7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvmy-9L81jK4Nll1pR-NNZVhy8APykwTI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "661106240053-dg4hhprkbl9hegs20clpebimeiv61tk7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "661106240053-92cnr4mfiqoubpc0age5trdpfki9k6u8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.mobileapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

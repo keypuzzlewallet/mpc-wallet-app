@@ -1,0 +1,149 @@
+{
+  "fiats": [
+    {
+      "fiat": "USD",
+      "symbol": "$",
+      "fiatName": "US Dollar",
+      "enabled": true,
+      "priceFeedId": "usd",
+      "flags": []
+    },
+    {
+      "fiat": "GBP",
+      "symbol": "£",
+      "fiatName": "British Pound Sterling",
+      "enabled": true,
+      "priceFeedId": "gbp",
+      "flags": []
+    },
+    {
+      "fiat": "EUR",
+      "symbol": "€",
+      "fiatName": "Euro",
+      "enabled": true,
+      "priceFeedId": "eur",
+      "flags": []
+    }
+  ],
+  "coins": [
+    {
+      "coinName": "Bitcoin",
+      "coin": "BTC",
+      "priceFeedId": "bitcoin",
+      "configForBlockchain": [
+        {
+          "blockchain": "BITCOIN",
+          "decimals": 8,
+          "enabled": true,
+          "isNative": true,
+          "flags": []
+        }
+      ]
+    },
+    {
+      "coinName": "Ethereum",
+      "coin": "ETH",
+      "priceFeedId": "ethereum",
+      "configForBlockchain": [
+        {
+          "blockchain": "ETHEREUM",
+          "decimals": 18,
+          "enabled": true,
+          "isNative": true,
+          "flags": []
+        }
+      ]
+    },
+    {
+      "coinName": "Cardano",
+      "coin": "ADA",
+      "priceFeedId": "cardano",
+      "configForBlockchain": [
+        {
+          "blockchain": "CARDANO",
+          "decimals": 6,
+          "enabled": true,
+          "isNative": true,
+          "flags": []
+        }
+      ]
+    },
+    {
+      "coinName": "Polygon",
+      "coin": "MATIC",
+      "priceFeedId": "matic-network",
+      "configForBlockchain": [
+        {
+          "blockchain": "POLYGON",
+          "decimals": 18,
+          "enabled": true,
+          "isNative": true,
+          "flags": []
+        }
+      ]
+    },
+    {
+      "coinName": "Tether",
+      "coin": "USDT",
+      "priceFeedId": "tether",
+      "configForBlockchain": [
+        {
+          "blockchain": "ETHEREUM",
+          "decimals": 6,
+          "isNative": false,
+          "contractAddress": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+          "enabled": true,
+          "flags": []
+        }
+      ]
+    }
+  ],
+  "blockchains": [
+    {
+      "blockchain": "BITCOIN",
+      "blockchainName": "Bitcoin",
+      "keyScheme": "ECDSA",
+      "enabled": true,
+      "txExplorer": "https://live.blockcypher.com/btc-testnet/tx/{txId}/",
+      "addressExplorer": "https://live.blockcypher.com/btc-testnet/address/{address}/",
+      "flags": []
+    },
+    {
+      "blockchain": "ETHEREUM",
+      "blockchainName": "Ethereum",
+      "keyScheme": "ECDSA",
+      "enabled": true,
+      "txExplorer": "https://sepolia.etherscan.io/tx/0x{txId}",
+      "addressExplorer": "https://sepolia.etherscan.io/address/{address}",
+      "rpc": "https://endpoints.omniatech.io/v1/eth/sepolia/public",
+      "chainId": "11155111",
+      "flags": [
+        "EIP1559",
+        "DEFI"
+      ]
+    },
+    {
+      "blockchain": "CARDANO",
+      "blockchainName": "Cardano",
+      "keyScheme": "EDDSA",
+      "enabled": true,
+      "txExplorer": "https://preprod.cardanoscan.io/transaction/{txId}",
+      "addressExplorer": "https://preprod.cardanoscan.io/address/{address}",
+      "flags": []
+    },
+    {
+      "blockchain": "POLYGON",
+      "blockchainName": "Polygon",
+      "keyScheme": "ECDSA",
+      "enabled": true,
+      "txExplorer": "https://mumbai.polygonscan.com/tx/0x{txId}",
+      "addressExplorer": "https://mumbai.polygonscan.com/address/{address}",
+      "rpc": "https://rpc.ankr.com/polygon_mumbai",
+      "chainId": "80001",
+      "flags": [
+        "EIP1559",
+        "DEFI"
+      ]
+    }
+  ]
+}
